@@ -1,0 +1,6 @@
+from glob import glob
+
+i = 0
+for x in glob("../../data/raw/*"):
+    i += 1
+    print(f'df{i} = pd.read_csv("{x}")')
